@@ -4,6 +4,7 @@
 **An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/alfred-regular/krasus)**.
 # Features
 
+
 ```sh
 # Install dependencies.
 # Tested on Ubuntu 14.04. For other OSs, check out https://github.com/yagop/telegram-bot/wiki/Installation
@@ -45,3 +46,22 @@ tmux new-session -s script "bash steady.sh -t"
 **go to steady.sh and config it !**
 
 ***Then Go To line 9 - 10 and change bot folder name and reload time!***
+
+
+* * *
+
+# Support and development
+
+[@alfred-regular](https://telegram.me/alfred_regular)
+
+For managing [@krasustg](https://telegram.me/krasustg) on Telegram.
+
+[@dani_angel](https://telegram.me/dani_angel)
+
+For graphic designs.
+
+[Mac_anderson](https://github.com/mac_anderson)
+
+[Samoul_sample](https://github.com/samoul_sample)
+
+* * *
