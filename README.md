@@ -5,8 +5,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/SIGNALTEAM/SignalTG.git
-cd SignalTG
+git clone https://github.com/alfred-regular/krasus.git
+cd krasus
 chmod +x launchfix2.sh
 chmod +x launch.sh
 chmod +x autolaunch.sh
@@ -18,7 +18,7 @@ cd bin
 ./luarocks-5.2 install lub
 ./luarocks-5.2 install luaexpat
 cd $HOME
-cd SignalTG
+cd krasus
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
 ```
