@@ -224,8 +224,10 @@ function show_group_settingsmod(msg, target)
 			data[tostring(target)]['settings']['lock_rtl'] = 'no'
 		end
 	end
+  local gp_type = data[tostring(msg.to.id)]['group_type']
+  
   local settings = data[tostring(target)]['settings']
-  local text = "⚙Group settings:⚙\n⚡️Lock group name : "..settings.lock_name.."\n⚡️Lock group photo : "..settings.lock_photo.."\n⚡️Lock group member : "..settings.lock_member.."\n⚡️Lock group leave : "..leave_ban.."\n⚡️flood sensitivity : "..NUM_MSG_MAX.."\n⚡️Bot protection : "..bots_protection.."\n⚡️Lock links : "..settings.lock_link.."\n⚡️Lock RTL: "..settings.lock_rtl.."\n⚡️Lock sticker: "..settings.lock_sticker.."\n⚡️Public: "..settings.public.."\n💥Bot Version : 1.0 💥\n💥Signal Bot💥\n@Signal_CH"
+  local text = "\n🔧SuperGroup settings:\n____________________\n#Lock links : "..settings.lock_link.."\n#Lock contacts: "..settings.lock_contacts.."\n#Lock flood: "..settings.flood.."\n#Flood sensitivity : "..NUM_MSG_MAX.."\n#Lock spam: "..settings.lock_spam.."\n#Lock Arabic: "..settings.lock_arabic.."\n#Lock Member: "..settings.lock_member.."\n#Lock RTL: "..settings.lock_rtl.."\n#Lock Tgservice: "..settings.lock_tgservice.."\n#Lock sticker: "..settings.lock_sticker.."\n#Lock tag: "..settings.tag.."\n#Lock emoji: "..settings.emoji.."\n#Lock english: "..settings.english.."\n#Lock Forward: "..settings.fwd.."\n#Lock reply: "..settings.reply.."\n#Lock join: "..settings.join.."\n#Lock username: "..settings.username.."\n#Lock media: "..settings.media.."\n#Lock fosh: "..settings.fosh.."\n#Lock leave: "..settings.leave.."\n#Lock bots: "..bots_protection.."\n#Lock operator: "..settings.operator.."\n____________________\n👉🏻Easy Sweet&Faster Switch🔩:️\n____________________\n🔩Switch Model Etehad: "..settings.etehad.."\n⛓Lock all: "..settings.all.."\n____________________\nℹ️About Group:️\n____________________\n🗯Group type: "..gp_type.."\n👥Public: "..settings.public.."\n☣Strict settings: "..settings.strict.."\n____________________\n💿Bot Version : 0.1 \n🛡krasus Bot\n@krasus_team🛡"
   return text
 end
 
