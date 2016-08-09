@@ -1,3 +1,9 @@
+# [KRASUS](https://telegram.me/KRASUS_TEAM)
+
+
+**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/alfred-regular/krasus)**.
+# Features
+
 ```sh
 # Install dependencies.
 # Tested on Ubuntu 14.04. For other OSs, check out https://github.com/yagop/telegram-bot/wiki/Installation
