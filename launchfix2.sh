@@ -113,5 +113,5 @@ else
   fi
   
 
-  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/Signal_bot.lua -l 1 -E $@
+  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/krasus_bot.lua -l 1 -E $@
 fi
