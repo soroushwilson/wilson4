@@ -29,4 +29,3 @@ send_large_msg(extra.receiver, 'شکایت شما ثبت شد\nمتصدی پرو
   }
 
 end
---Shared by @MostafaEsZ
