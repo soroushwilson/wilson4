@@ -213,7 +213,7 @@ return {
           "!plist : list all plugins.",
           "!pl + [plugin] : enable plugin.",
           "!pl - [plugin] : disable plugin.",
-          "!pl * : reloads all plugins." },
+          "!rel * : reloads all plugins." },
           },
   patterns = {
     "^!plist$",
@@ -221,7 +221,7 @@ return {
     "^!pl? (-) ([%w_%.%-]+)$",
     "^!pl? (+) ([%w_%.%-]+) (chat)",
     "^!pl? (-) ([%w_%.%-]+) (chat)",
-    "^!pl? (*)$",
+    "^!rel? (*)$",
     "^[!/](reload)$"
     },
   run = run,
