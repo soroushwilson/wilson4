@@ -22,7 +22,7 @@ local function plugin_exists( name )
 end
 
 local function list_all_plugins(only_enabled)
-  local tmp = '\n\n#ｖｉｒｕｓ ＴＭ'
+  local tmp = '\n\n#KRASUS ＴＭ'
   local text = ''
   local nsum = 0
   for k, v in pairs( plugins_names( )) do
@@ -68,7 +68,7 @@ local function list_plugins(only_enabled)
      -- text = text..v..'  '..status..'\n'
     end
   end
-  local text = text..'\n#Plugins Reloaded !\n\n'..nact..' #plugins enabled\n'..nsum..' #plugins installed\n\n#ｖｉｒｕｓ ＴＭ'
+  local text = text..'\n#Plugins Reloaded !\n\n'..nact..' #plugins enabled\n'..nsum..' #plugins installed\n\n#KRASUS ＴＭ'
   return text
 end
 
