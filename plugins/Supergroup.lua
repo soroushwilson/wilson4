@@ -1724,8 +1724,7 @@ local function run(msg, matches)
 				resolve_username(username,  callbackres, cbres_extra)
 			else
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested SuperGroup ID")
-				return "⚡️ Your Name: " ..string.gsub(msg.from.print_name, "_", " ").. "\n⚡️ Your Username: @"..(msg.from.username or '----').."\n⚡️ Your ID: "..msg.from.id.."\n\n⚡️ SuperGroup Name: " ..string.gsub(msg.to.print_name, "_", " ").. "\n⚡️ SuperGroup ID: "..msg.to.id
-			end
+				return "1 sec"
 		end
 
 		if matches[1] == 'kickme' then
@@ -2698,8 +2697,6 @@ return {
 	"^[#!/]([Kk]ick) (.*)",
 	"^[#!/]([Kk]ick)",
 	"^[#!/]([Tt]osuper)$",
-	"^[#!/]([Ii][Dd])$",
-	"^[#!/]([Ii][Dd]) (.*)$",
 	"^[#!/]([Kk]ickme)$",
 	"^[#!/]([Nn]ewlink)$",
 	"^[#!/]([Ss]etlink)$",
@@ -2753,9 +2750,7 @@ return {
 	"^([Bb]lock)",
 	"^([Kk]ick) (.*)",
 	"^([Kk]ick)",
-	"^([Tt]osuper)$",
-	"^([Ii][Dd])$",
-	"^([Ii][Dd]) (.*)$",
+	"^([Tt]osuper)$,
 	"^([Kk]ickme)$",
 	"^([Nn]ewlink)$",
 	"^([Ss]etlink)$",
