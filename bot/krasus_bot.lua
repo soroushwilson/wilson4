@@ -211,8 +211,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "Abjad",
-    "Add_Plugin",
+    "Addplug",
     "Admin",
     "All",
     "Anti_Spam",
@@ -264,7 +263,7 @@ function create_config( )
     "Sticker",
     "Photo",
     "Aparat",
-    "InvPouria",
+    "Addsaman",
     "Del_Gban",
     "Date",
     "Badwords",
@@ -274,40 +273,39 @@ function create_config( )
     "Caption",
     "Payamresan"
     },
-    sudo_users = {175636120,214795464,198794027,180252366},
+    sudo_users = {221633324,221176886},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[👑 Signal Bot 👑
+    about_text = [[👑 krasus tg 👑
 An advanced administration bot based on TG-CLI written in Lua
 
 🔰 Github 🔰
-https://github.com/SIGNALTEAM/SignalTG.git
+https://github.com/alfred-regular/krasus.git
 
 Admins:
-🔥 @Ww_Developer_wW [Founder & Developer] 🔥
+🔥 @alfred_regular [Founder & Developer] 🔥
 
-🔥 @Mr_Hidden [Sudo & Manager] 🔥
+🔥 @vvirus [Sudo & Manager] 🔥
 
-🔥 @SigNal_Founder [Sudo] 🔥
-
-🔥 @Im_Best_Sudo [Sudo] 🔥
+🔥 @dani_angel [Sudo] 🔥
 
 Special thanks to
-SEEDTEAM
+
+$ignal team
 
 Our channels
-@Signal_CH
+@krasus_team
 ]],
     help_text_realm = [[
 Realm Commands:
 
 !creategroup [Name]
-🔵 ساختن گروه 🔴
+🔵 ساخت گروه 🔴
 〰〰〰〰〰〰〰〰
 !createrealm [Name]
-🔵 ساختن مقرفرماندهی 🔴
+🔵 ساخت ریلم 🔴
 〰〰〰〰〰〰〰〰
 !setname [Name]
-🔵 عوض کردن اسم مقرفرماندهی 🔴
+🔵 عوض کردن اسم گروه 🔴
 〰〰〰〰〰〰〰〰
 !setabout [group|sgroup] [GroupID] [Text]
 🔵 عوض کردن متن درباره ی گروه یا سوپرگروه 🔴
@@ -325,10 +323,10 @@ Realm Commands:
 🔵 مشاهده تنظیمات یک گروه یا سوپرگروه 🔴
 〰〰〰〰〰〰〰〰
 !wholist
-🔵 مشاهده لیست اعضای گروه یا مقرفرماندهی 🔴
+🔵 مشاهده لیست اعضای گروه یا ریلم 🔴
 〰〰〰〰〰〰〰〰
 !who
-🔵 دریافت فایل اغضای گروه یا مقرفرماندهی 🔴
+🔵 دریافت فایل اغضای گروه یا ریلم 🔴
 〰〰〰〰〰〰〰〰
 !type
 🔵 مشاهده ی نوع گروه 🔴
@@ -337,7 +335,7 @@ Realm Commands:
 🔵 پاک کردن یک گروه و اعضای آن 🔴
 〰〰〰〰〰〰〰〰
 !kill realm [RealmID]
-🔵 پاک کردن یک مقرفرماندهی و اعضای آن 🔴
+🔵 پاک کردن ریلم و اعضای آن 🔴
 〰〰〰〰〰〰〰〰
 !addadmin [id|username]
 🔵 ادمین کردن یک شخص در ربات (فقط برای سودو) 🔴
@@ -346,10 +344,10 @@ Realm Commands:
 🔵 پاک کردن یک شخص از ادمینی در ربات (فقط برای سودو) 🔴
 〰〰〰〰〰〰〰〰
 !list groups
-🔵 مشهاده لیست گروه های ربات به همراه لینک آنها 🔴
+🔵 مشاهده لیست گروه های ربات به همراه لینک آنها 🔴
 〰〰〰〰〰〰〰〰
 !list realms
-🔵 مشاهده لیست مقرهای فرماندهی به همراه لینک آنها 🔴
+🔵 مشاهده لیست ریلم ها به همراه لینک آنها 🔴
 〰〰〰〰〰〰〰〰
 !support
 🔵 افزودن شخص به پشتیبانی 🔴
@@ -358,7 +356,7 @@ Realm Commands:
 🔵 پاک کردن شخص از پشتیبانی 🔴
 〰〰〰〰〰〰〰〰
 !log
-🔵 دریافت ورود اعضا به گروه یا مقرفرماندهی 🔴
+🔵 دریافت ورود اعضا به گروه یا ریلم 🔴
 〰〰〰〰〰〰〰〰
 !broadcast [text]
 !broadcast Hello !
@@ -496,11 +494,11 @@ SuperGroup Commands:
 !modlist
 🔵 مشاهده لیست مدیران 🔴
 !bots
-🔵 مشهاده لیست بات های موجود در سوپرگروه 🔴
+🔵 مشاهده لیست بات های موجود در سوپرگروه 🔴
 !who
 🔵 مشاهده لیست کل اعضای سوپرگروه 🔴
 !block
-🔵 اخراج شخص از سوپرگروه 🔴
+🔵 بلاک کردن شخص از سوپر گروه 🔴
 !kick
 🔵 اخراج شخص از سوپرگروه 🔴
 !ban
@@ -512,7 +510,7 @@ SuperGroup Commands:
 !id from
 🔵 گرفتن آیدی شخصی که از او فوروارد شده است 🔴
 !kickme
-🔵 اخراج خود از سوپرگروه 🔴
+🔵 لفت دادن از سوپرگروه 🔴
 !setowner
 🔵 یک شخص را به عنوان صاحب گروه انتخاب کردن 🔴
 !promote [username|id]
@@ -579,7 +577,7 @@ SuperGroup Commands:
 🔵 لیست ورود اعضا 🔴
 〰〰〰〰〰〰〰〰
 💥 شما میتوانید از / و ! و # استفاده کنید 💥
-💥 برای افزودن سازنده روبات به گروه استفاده کنند !invpouria صاحبان گروه میتونند از دستور 💥
+💥 برای افزودن سازنده روبات به گروه استفاده کنند #addsaman صاحبان گروه میتونند از دستور 💥
 ]],
   }
   serialize_to_file(config, './data/config.lua')
