@@ -211,7 +211,7 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "Addplug",
+    "addplug",
     "Admin",
     "All",
     "Anti_Spam",
@@ -223,7 +223,7 @@ function create_config( )
     "Dictionary",
     "Fantasy_Writer",
     "Get",
-    "Get_Plugins",
+    "getplugin",
     "Info",
     "Ingroup",
     "Inpm",
