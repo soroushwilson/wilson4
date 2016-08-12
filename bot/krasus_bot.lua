@@ -245,7 +245,6 @@ function create_config( )
     "Onservice",
     "Owners",
     "Plugins",
-    "Remove_Plugin",
     "Rmsg",
     "Serverinfo",
     "Set",
