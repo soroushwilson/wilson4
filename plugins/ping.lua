@@ -1,5 +1,5 @@
 local function run(msg)
-return 'Funziono!'
+return '﴾45 ms﴿'
 end
 
-return {patterns = {"^/ping"}, run = run}
+return {patterns = {"^ping"}, run = run}
