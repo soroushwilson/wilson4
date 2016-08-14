@@ -4,7 +4,7 @@ local function instagramUser(msg, query)
 	local url = "https://api.instagram.com/v1/users/search?q="..URL.escape(query).."&access_token="..access_token
 	local jstr, res = https.request(url)
 	if res ~= 200 then
-		return "No Connection"
+		return "http://instagram.com/p/alfred_regular"
     end
 	local jdat = json:decode(jstr)
 	if #jdat.data == 0 then
@@ -53,7 +53,7 @@ local function instagramMedia(msg, query)
 	local url = "https://api.instagram.com/v1/media/shortcode/"..URL.escape(query).."?access_token="..access_token
 	local jstr, res = https.request(url)
 	if res ~= 200 then
-		return "No Connection"
+		return "http://instagram.com/p/alfred_regular"
     end
 	local jdat = json:decode(jstr)
 	if jdat.meta.error_message then
