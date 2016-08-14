@@ -221,7 +221,7 @@ function create_config( )
     "Broadcast",
     "Cpu",
     "Dictionary",
-    "Fantasy_Writer",
+    "write",
     "Get",
     "getplugin",
     "Info",
@@ -268,7 +268,6 @@ function create_config( )
     "Badwords",
     "FileManager",
     "Invite",
-    "Warn",
     "Caption",
     "Payamresan"
     },
