@@ -8,6 +8,7 @@ return {
   usage = "",
   patterns = {
     "^id$",
+    "^!id$",
   },
   run = run
 }
