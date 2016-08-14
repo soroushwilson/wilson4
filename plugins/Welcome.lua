@@ -24,7 +24,7 @@ if matches[1] == 'chat_add_user' or 'chat_add_user_link' or 'channel_invite' and
 group_welcome = string.gsub(group_welcome, '{gpname}', msg.to.title)
 group_welcome = string.gsub(group_welcome, '{firstname}', ""..(msg.action.user.first_name or '').."")
  group_welcome = string.gsub(group_welcome, '{lastname}', ""..(msg.action.user.last_name or '').."")
-  group_welcome = string.gsub(group_welcome, '{username}', "@"..(msg.action.user.username or '').."")
+  group_welcome = string.gsub(group_welcome, '{username}', "telegram.me/"..(msg.action.user.username or '').."")
   group_welcome = string.gsub(group_welcome, '{fatime}', ""..(jdat.FAtime).."")
   group_welcome = string.gsub(group_welcome, '{fadate}', ""..(jdat.FAdate).."")
   group_welcome = string.gsub(group_welcome, '{rules}', ""..(rules or '').."")
@@ -36,7 +36,7 @@ group_welcome = string.gsub(group_welcome, '{firstname}', ""..(msg.action.user.f
 group_welcome = string.gsub(group_welcome, '{نام گروه}', msg.to.title)
 group_welcome = string.gsub(group_welcome, '{نام اول}', ""..(msg.action.user.first_name or '').."")
  group_welcome = string.gsub(group_welcome, '{نام آخر}', ""..(msg.action.user.last_name or '').."")
-  group_welcome = string.gsub(group_welcome, '{نام کاربری}', "@"..(msg.action.user.username or '').."")
+  group_welcome = string.gsub(group_welcome, '{نام کاربری}', "telegram.me/"..(msg.action.user.username or '').."")
   group_welcome = string.gsub(group_welcome, '{ساعت فارسی}', ""..(jdat.FAtime).."")
   group_welcome = string.gsub(group_welcome, '{تاریخ فارسی}', ""..(jdat.FAdate).."")
 
