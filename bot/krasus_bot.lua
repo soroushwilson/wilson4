@@ -592,7 +592,7 @@ function on_user_update (user, what)
 end
 
 function on_chat_update (chat, what)
-  --vardump (chat)
+
 end
 
 function on_secret_chat_update (schat, what)
@@ -614,12 +614,13 @@ function load_plugins()
 
     if not ok then
       print('\27[31mError loading plugin '..v..'\27[39m')
-	  print(tostring(io.popen("lua plugins/"..v..".lua"):read('*all')))
+      print(tostring(io.popen("lua plugins/"..v..".lua"):read('*all')))
       print('\27[31m'..err..'\27[39m')
     end
 
   end
 end
+
 
 -- custom add
 function load_data(filename)
@@ -644,7 +645,6 @@ function save_data(filename, data)
 	f:close()
 
 end
-
 
 -- Call and postpone execution for cron plugins
 function cron_plugins()
