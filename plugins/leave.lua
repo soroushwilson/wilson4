@@ -6,7 +6,7 @@ local function run(msg, matches)
   end
   if msg.action.type == "chat_add_user" and msg.action.user.id == tonumber(our_id) and not is_sudo(msg) then
 	  leave("channel#id"..msg.to.id, ok_cb, false)
-	  send_large_msg("channel#id"..msg.to.id, "bebin bache koni nkn babam giret biare khahareto migad sag pedar alanam ham global mishi ham block siktir")
+	  send_large_msg("channel#id"..msg.to.id, "good bye👋")
   end
 end
 
