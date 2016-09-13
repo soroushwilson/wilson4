@@ -271,7 +271,7 @@ function create_config( )
     "Caption",
     "Payamresan"
     },
-    sudo_users = {221633324,221176886},
+    sudo_users = {140760293},
     moderation = {data = 'data/moderation.json'},
     about_text = [[👑 krasus tg 👑
 An advanced administration bot based on TG-CLI written in Lua
